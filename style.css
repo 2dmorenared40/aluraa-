@@ -1,4 +1,4 @@
-[08:07, 10/2/2024] Ray❣️: :root {
+ :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
@@ -21,85 +21,7 @@ body {
 }
 
 .principal {
-    background-image: url(Fundo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center;
-    text-align: center;
-}
-
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.container__botao {
-    background-color: var(--botao-azul);
-    border-radius: 5px;
-    paddin…
-[10:28, 10/2/2024] Ray❣️: <!DOCTYPE html>
-<html>
-
-<head>
-    <title>AluraFlix Plus</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <section class="principal container">
-        <div class="container__caixa">
-            <h1 class="container__titulo">Com o Combo+, você pode aproveitar a FungosFlix+ e o Fungos Língua por um preço
-                único.</h1>
-            <img src="Combo.png" alt="O combo+ é a junção do NewFl…
-[10:29, 10/2/2024] Ray❣️: <h2 class="descricao__titulo">Veja os seus videos favoritos</h2>
-            <p class="descricao__texto">assista quando e onde quiser. Assim, seus favoritos estão sempre com
-                você, até mesmo sem internet.</p>
-        </div>
-    </section>
-    
-    <section class="dispositivos">
-        <h2 class="dispositivos__titulo">Disponível nos seus dispositivos favoritos</h2>
-        <ul class="dispositivos__lista">
-            <li>
-                <img src="tv.png" alt="Ícone de televisão">
-                <h3 class="lista__item">TV</h3>
-            </li>
-            <li>
-                <img src="computador.png" alt="Ícone de computador">
-                <h3 class="lista__item">Computador</h3>
-            </li>
-            <li>
-                <img src…
-[10:29, 10/2/2024] Ray❣️: :root {
-    --branco-principal: rgb(255, 255, 255);
-    --cinza-secundario:  rgb(192, 192, 192);
-    --botao-azul: rgb(22, 123, 247);
-    --cor-de-fundo: rgb(0, 3, 12);
-    --fonte-principal: 'Inter';
-    --botao-azul-efeito: rgb(19, 50, 87);
-    }
-
-body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.principal {
-    background-image: url(Background.png);
+    background-image: url("Background.png");
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
@@ -225,6 +147,11 @@ body {
 
 .lista__link a:active {
     color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
 
 .container__botao:hover {
